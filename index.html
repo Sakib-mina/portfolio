@@ -1,0 +1,857 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Silent Spark Studio | Digital Product Studio</title>
+  <meta name="description" content="Silent Spark Studio - Websites, Mobile Apps, Custom Software, UI/UX, Store Publishing & YouTube Explainer Video Editing.">
+
+  <!-- Google Fonts: Space Grotesk + Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet">
+
+  <!-- EmailJS SDK -->
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Ultra-light Particle Canvas -->
+  <canvas id="ambient-canvas"></canvas>
+
+  <!-- Film Noise Texture -->
+  <div class="noise-overlay"></div>
+
+  <!-- Header / Navigation -->
+  <header class="site-header" id="navbar">
+    <div class="container nav-container">
+      <a href="#hero" class="brand-logo">
+        <span class="spark-icon">✦</span>
+        <span class="logo-text">Silent <span class="text-accent">Spark</span> <span class="logo-studio">Studio</span></span>
+      </a>
+
+      <nav class="nav-menu" id="nav-menu">
+        <ul class="nav-list">
+          <li><a href="#hero" class="nav-link active">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#services" class="nav-link">Services</a></li>
+          <li><a href="#portfolio" class="nav-link">Work</a></li>
+          <li><a href="#process" class="nav-link">Process</a></li>
+          <li><a href="#testimonials" class="nav-link">Reviews</a></li>
+          <li><a href="#contact" class="nav-link btn-nav">Get In Touch</a></li>
+        </ul>
+      </nav>
+
+      <button class="menu-toggle" id="menu-toggle" aria-label="Toggle navigation menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- 1. HERO SECTION (Clean, Short & Punchy) -->
+    <section id="hero" class="section hero-section">
+      <div class="container hero-container">
+        <div class="hero-badge reveal-item">
+          <span class="pulse-dot"></span>
+          <span>Digital Product Studio</span>
+        </div>
+
+        <h1 class="hero-title reveal-item">
+          We build digital products that <br>
+          <span class="gradient-text glow-text">spark real growth.</span>
+        </h1>
+
+        <p class="hero-description reveal-item">
+          Fast websites, iOS & Android apps, custom software, UI/UX design, App Store publishing, and Canva YouTube explainer videos.
+        </p>
+
+        <div class="hero-actions reveal-item">
+          <a href="#services" class="btn btn-primary">
+            <span>Explore Services</span>
+            <i data-lucide="arrow-down-right"></i>
+          </a>
+          <a href="#contact" class="btn btn-secondary">
+            <span>Start a Project</span>
+          </a>
+        </div>
+
+        <!-- Capability Ticker Strip -->
+        <div class="ticker-wrapper reveal-item">
+          <div class="ticker-track">
+            <span>Websites</span><span class="bullet">✦</span>
+            <span>Mobile Apps</span><span class="bullet">✦</span>
+            <span>Custom Software</span><span class="bullet">✦</span>
+            <span>UI/UX Design</span><span class="bullet">✦</span>
+            <span>Store Publishing</span><span class="bullet">✦</span>
+            <span>YouTube Explainer Videos</span><span class="bullet">✦</span>
+            <span>Websites</span><span class="bullet">✦</span>
+            <span>Mobile Apps</span><span class="bullet">✦</span>
+            <span>Custom Software</span><span class="bullet">✦</span>
+            <span>UI/UX Design</span><span class="bullet">✦</span>
+            <span>Store Publishing</span><span class="bullet">✦</span>
+            <span>YouTube Explainer Videos</span><span class="bullet">✦</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. ABOUT US SECTION -->
+    <section id="about" class="section about-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">02 / About</span>
+          <h2 class="section-title">Design, code & publish. <br><span class="gradient-text">All in one studio.</span></h2>
+          <p class="section-subtitle">We turn ideas into shipped digital products with speed, precision, and reliable execution.</p>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-card glass-panel reveal-item">
+            <h3 class="card-title">From first blueprint to live stores.</h3>
+            <p>
+              Silent Spark Studio handles the entire cycle: building responsive websites, cross-platform mobile apps, enterprise software, handling Google Play & Apple App Store reviews, and producing Canva-crafted YouTube explainer videos that engage audiences.
+            </p>
+            <div class="about-features">
+              <div class="feature-item">
+                <i data-lucide="check-circle-2"></i>
+                <div>
+                  <strong>Complete Delivery</strong>
+                  <p>Design, build, and publish under one roof.</p>
+                </div>
+              </div>
+              <div class="feature-item">
+                <i data-lucide="rocket"></i>
+                <div>
+                  <strong>100% Store Approval</strong>
+                  <p>Guaranteed compliance with Apple and Google store guidelines.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="stats-card glass-panel reveal-item">
+            <div class="stat-box">
+              <span class="stat-number">120+</span>
+              <span class="stat-title">Products Shipped</span>
+              <span class="stat-desc">Web, Mobile & Software</span>
+            </div>
+            <div class="stat-box">
+              <span class="stat-number">100%</span>
+              <span class="stat-title">Store Approval</span>
+              <span class="stat-desc">Apple & Play Store</span>
+            </div>
+            <div class="stat-box">
+              <span class="stat-number">99%</span>
+              <span class="stat-title">Client Satisfaction</span>
+              <span class="stat-desc">Across all projects</span>
+            </div>
+            <div class="stat-box">
+              <span class="stat-number">24/7</span>
+              <span class="stat-title">Post-Launch Care</span>
+              <span class="stat-desc">Continuous technical support</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. SERVICES SECTION (Clickable Cards with Detailed Modal) -->
+    <section id="services" class="section services-section">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-tag">03 / Services</span>
+          <h2 class="section-title">What We Deliver <br><span class="gradient-text">For Your Growth</span></h2>
+          <p class="section-subtitle">Click any service to view full in-depth specifications, stack & deliverables.</p>
+        </div>
+
+        <div class="services-grid">
+          <!-- 1. Website Development -->
+          <div class="service-card glass-panel reveal-item" data-service="web">
+            <div class="service-top">
+              <div class="service-icon"><i data-lucide="globe"></i></div>
+              <span class="service-index">01</span>
+            </div>
+            <h3>Website Development</h3>
+            <p>Modern, ultra-fast websites and web applications built for speed, SEO, and maximum conversion.</p>
+            <ul class="service-tags">
+              <li>React / Next.js</li>
+              <li>Responsive Design</li>
+              <li>SEO Optimized</li>
+            </ul>
+            <div class="service-click-hint">
+              <span>View In-Depth Details</span>
+              <i data-lucide="arrow-right"></i>
+            </div>
+          </div>
+
+          <!-- 2. Mobile App Development -->
+          <div class="service-card glass-panel reveal-item" data-service="mobile">
+            <div class="service-top">
+              <div class="service-icon"><i data-lucide="smartphone"></i></div>
+              <span class="service-index">02</span>
+            </div>
+            <h3>Mobile App Development</h3>
+            <p>Smooth native and cross-platform apps for iOS & Android with offline support and real-time cloud sync.</p>
+            <ul class="service-tags">
+              <li>Flutter / React Native</li>
+              <li>iOS & Android</li>
+              <li>Push Notifications</li>
+            </ul>
+            <div class="service-click-hint">
+              <span>View In-Depth Details</span>
+              <i data-lucide="arrow-right"></i>
+            </div>
+          </div>
+
+          <!-- 3. Custom Software Development -->
+          <div class="service-card glass-panel reveal-item" data-service="software">
+            <div class="service-top">
+              <div class="service-icon"><i data-lucide="cpu"></i></div>
+              <span class="service-index">03</span>
+            </div>
+            <h3>Custom Software Development</h3>
+            <p>Bespoke dashboards, CRM systems, scalable backends, and automated business tools designed for you.</p>
+            <ul class="service-tags">
+              <li>Enterprise Tools</li>
+              <li>Custom APIs</li>
+              <li>Database Architecture</li>
+            </ul>
+            <div class="service-click-hint">
+              <span>View In-Depth Details</span>
+              <i data-lucide="arrow-right"></i>
+            </div>
+          </div>
+
+          <!-- 4. UI/UX Design -->
+          <div class="service-card glass-panel reveal-item" data-service="uiux">
+            <div class="service-top">
+              <div class="service-icon"><i data-lucide="palette"></i></div>
+              <span class="service-index">04</span>
+            </div>
+            <h3>UI / UX Design</h3>
+            <p>Modern, intuitive interfaces crafted in Figma with clear user journeys and interactive prototypes.</p>
+            <ul class="service-tags">
+              <li>Design Systems</li>
+              <li>Figma Prototypes</li>
+              <li>User Experience</li>
+            </ul>
+            <div class="service-click-hint">
+              <span>View In-Depth Details</span>
+              <i data-lucide="arrow-right"></i>
+            </div>
+          </div>
+
+          <!-- 5. Play Store & Apple Store Publishing -->
+          <div class="service-card glass-panel highlight-card reveal-item" data-service="publishing">
+            <div class="service-top">
+              <div class="service-icon"><i data-lucide="store"></i></div>
+              <span class="service-index">05</span>
+            </div>
+            <h3>Store Publishing</h3>
+            <p>Hassle-free publishing to Google Play & Apple App Store. We handle policies, metadata, and guaranteed approvals.</p>
+            <ul class="service-tags">
+              <li>Google Play Store</li>
+              <li>Apple App Store</li>
+              <li>Review Approval</li>
+            </ul>
+            <div class="service-click-hint">
+              <span>View In-Depth Details</span>
+              <i data-lucide="arrow-right"></i>
+            </div>
+          </div>
+
+          <!-- 6. YouTube Explainer Video Editing (Canva) -->
+          <div class="service-card glass-panel reveal-item" data-service="video">
+            <div class="service-top">
+              <div class="service-icon"><i data-lucide="video"></i></div>
+              <span class="service-index">06</span>
+            </div>
+            <h3>YouTube Explainer Videos</h3>
+            <p>High-engagement YouTube explainer videos crafted with Canva Pro graphics, crisp slide transitions, and engaging storytelling.</p>
+            <ul class="service-tags">
+              <li>Canva Pro Design</li>
+              <li>YouTube Optimization</li>
+              <li>Voiceover Sync & Captions</li>
+            </ul>
+            <div class="service-click-hint">
+              <span>View In-Depth Details</span>
+              <i data-lucide="arrow-right"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. CURATED PORTFOLIO SECTION (Exact 9 Projects: 4 Web, 3 App, 1 UI/UX, 1 Video) -->
+    <section id="portfolio" class="section portfolio-section">
+      <div class="container">
+        <div class="section-header flex-header">
+          <div>
+            <span class="section-tag">04 / Featured Portfolio</span>
+            <h2 class="section-title">Selected 9 Case Studies <br><span class="gradient-text">Shipped With Mastery</span></h2>
+          </div>
+          <div class="portfolio-filters">
+            <button class="filter-btn active" data-filter="all">All Projects (9)</button>
+            <button class="filter-btn" data-filter="web">Websites (4)</button>
+            <button class="filter-btn" data-filter="app">Mobile Apps (3)</button>
+            <button class="filter-btn" data-filter="uiux">UI/UX Design (1)</button>
+            <button class="filter-btn" data-filter="video">Video Editing (1)</button>
+          </div>
+        </div>
+
+        <div class="portfolio-grid">
+          <!-- 1. Website (1/4) -->
+          <div class="project-card glass-panel reveal-item" data-category="web">
+            <div class="project-image-wrapper">
+              <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80" alt="Aura FinTech Dashboard" class="project-img" loading="lazy">
+              <div class="project-overlay"><span class="view-tag">Live Showcase <i data-lucide="arrow-up-right"></i></span></div>
+            </div>
+            <div class="project-details">
+              <div class="project-meta"><span class="project-cat">Website Development</span><span class="project-badge">Published</span></div>
+              <h3 class="project-title">Aura FinTech Exchange</h3>
+              <p class="project-desc">High-speed trading analytics platform with live WebSocket tickers and dark obsidian theme.</p>
+            </div>
+          </div>
+
+          <!-- 2. Website (2/4) -->
+          <div class="project-card glass-panel reveal-item" data-category="web">
+            <div class="project-image-wrapper">
+              <img src="https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?auto=format&fit=crop&w=800&q=80" alt="Vespera Luxury E-Commerce" class="project-img" loading="lazy">
+              <div class="project-overlay"><span class="view-tag">Live Showcase <i data-lucide="arrow-up-right"></i></span></div>
+            </div>
+            <div class="project-details">
+              <div class="project-meta"><span class="project-cat">Website Development</span><span class="project-badge">E-Commerce</span></div>
+              <h3 class="project-title">Vespera Atelier Shop</h3>
+              <p class="project-desc">Minimalist luxury brand storefront with 99 Google PageSpeed score and instant checkout.</p>
+            </div>
+          </div>
+
+          <!-- 3. Website (3/4) -->
+          <div class="project-card glass-panel reveal-item" data-category="web">
+            <div class="project-image-wrapper">
+              <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=800&q=80" alt="Apex SaaS Landing Page" class="project-img" loading="lazy">
+              <div class="project-overlay"><span class="view-tag">Live Showcase <i data-lucide="arrow-up-right"></i></span></div>
+            </div>
+            <div class="project-details">
+              <div class="project-meta"><span class="project-cat">Website Development</span><span class="project-badge">SaaS Portal</span></div>
+              <h3 class="project-title">Apex Cloud Analytics</h3>
+              <p class="project-desc">High-converting dark SaaS marketing website with interactive pricing and lead generation.</p>
+            </div>
+          </div>
+
+          <!-- 4. Website (4/4) -->
+          <div class="project-card glass-panel reveal-item" data-category="web">
+            <div class="project-image-wrapper">
+              <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=800&q=80" alt="Nova Developer Documentation" class="project-img" loading="lazy">
+              <div class="project-overlay"><span class="view-tag">Live Showcase <i data-lucide="arrow-up-right"></i></span></div>
+            </div>
+            <div class="project-details">
+              <div class="project-meta"><span class="project-cat">Website Development</span><span class="project-badge">Docs Hub</span></div>
+              <h3 class="project-title">Nova API Documentation Hub</h3>
+              <p class="project-desc">Interactive developer portal with live code testing sandboxes and algorithmic dark themes.</p>
+            </div>
+          </div>
+
+          <!-- 5. Mobile App (1/3) - Clean Care (Govt Waste Management System) -->
+          <a href="https://play.google.com/store/apps/details?id=com.cleancarebd.app&hl=en" target="_blank" rel="noopener noreferrer" class="project-card glass-panel project-card-link reveal-item" data-category="app">
+            <div class="project-image-wrapper">
+              <img src="https://images.unsplash.com/photo-1532996122724-e3c354a0b15b?auto=format&fit=crop&w=800&q=80" alt="Clean Care Govt Project App" class="project-img" loading="lazy">
+              <div class="project-overlay"><span class="view-tag playstore-tag"><i data-lucide="play"></i> View on Play Store</span></div>
+            </div>
+            <div class="project-details">
+              <div class="project-meta">
+                <span class="project-cat">Mobile App &bull; Govt Achievement</span>
+                <span class="project-badge govt-badge">Govt Project</span>
+              </div>
+              <h3 class="project-title">Clean Care</h3>
+              <p class="project-desc">A key civic achievement app: Citizens report and photograph roadside waste in Dhaka; local ward representatives verify and resolve issues directly.</p>
+              <div class="project-link-action">
+                <span>Play Store Link</span>
+                <i data-lucide="arrow-up-right"></i>
+              </div>
+            </div>
+          </a>
+
+          <!-- 6. Mobile App (2/3) - Lekhok Ghor (Book Reading Platform) -->
+          <a href="https://play.google.com/store/apps/details?id=com.helaluddin.lekhokghor&hl=en" target="_blank" rel="noopener noreferrer" class="project-card glass-panel project-card-link reveal-item" data-category="app">
+            <div class="project-image-wrapper">
+              <img src="https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80" alt="Lekhok Ghor Book App" class="project-img" loading="lazy">
+              <div class="project-overlay"><span class="view-tag playstore-tag"><i data-lucide="play"></i> View on Play Store</span></div>
+            </div>
+            <div class="project-details">
+              <div class="project-meta">
+                <span class="project-cat">Mobile App &bull; Reading &amp; Books</span>
+                <span class="project-badge">Play Store</span>
+              </div>
+              <h3 class="project-title">Lekhok Ghor (লেখক ঘর)</h3>
+              <p class="project-desc">Comprehensive digital e-book and author community platform where readers discover, read, and explore books with offline reading support.</p>
+              <div class="project-link-action">
+                <span>Play Store Link</span>
+                <i data-lucide="arrow-up-right"></i>
+              </div>
+            </div>
+          </a>
+
+          <!-- 7. Mobile App (3/3) - MeGrow: Grow Daily,Care Deeply -->
+          <a href="https://play.google.com/store/apps/details?id=com.lxf.ccdisciplinesea" target="_blank" rel="noopener noreferrer" class="project-card glass-panel project-card-link reveal-item" data-category="app">
+            <div class="project-image-wrapper">
+              <img src="https://images.unsplash.com/photo-1506126613408-eca07ce68773?auto=format&fit=crop&w=800&q=80" alt="MeGrow: Grow Daily,Care Deeply" class="project-img" loading="lazy">
+              <div class="project-overlay"><span class="view-tag playstore-tag"><i data-lucide="play"></i> View on Play Store</span></div>
+            </div>
+            <div class="project-details">
+              <div class="project-meta">
+                <span class="project-cat">Mobile App &bull; Habit &amp; Growth</span>
+                <span class="project-badge">Play Store</span>
+              </div>
+              <h3 class="project-title">MeGrow: Grow Daily, Care Deeply</h3>
+              <p class="project-desc">Self-discipline, daily habit tracking, and mindfulness lifestyle app designed for personal growth, focus routines, and deep self-care.</p>
+              <div class="project-link-action">
+                <span>Play Store Link</span>
+                <i data-lucide="arrow-up-right"></i>
+              </div>
+            </div>
+          </a>
+
+          <!-- 8. UI/UX Design (1/1) - EventHub: Event Booking App UI -->
+          <a href="https://www.figma.com/design/xRrn962vHJJlj1qrfmzwO8/Event-Booking-App--EventHub--Community---Community-?node-id=696-23686&p=f&t=SVNj4bA54GfWIjny-0" target="_blank" rel="noopener noreferrer" class="project-card glass-panel project-card-link reveal-item" data-category="uiux">
+            <div class="project-image-wrapper">
+              <img src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?auto=format&fit=crop&w=800&q=80" alt="EventHub Event Booking App UI Design" class="project-img" loading="lazy">
+              <div class="project-overlay"><span class="view-tag figma-tag"><i data-lucide="figma"></i> Open Figma Design</span></div>
+            </div>
+            <div class="project-details">
+              <div class="project-meta">
+                <span class="project-cat">UI/UX Design &bull; Mobile App</span>
+                <span class="project-badge figma-badge">Figma Community</span>
+              </div>
+              <h3 class="project-title">EventHub: Event Booking App UI</h3>
+              <p class="project-desc">A complete mobile event booking and community app UI crafted in Figma. Features event discovery, seat reservation, ticket QR generation, and interactive user onboarding screens.</p>
+              <div class="project-link-action">
+                <span>Explore Live Figma File</span>
+                <i data-lucide="arrow-up-right"></i>
+              </div>
+            </div>
+          </a>
+
+          <!-- 9. Video Editing (1/1) -->
+          <div class="project-card glass-panel reveal-item" data-category="video">
+            <div class="project-image-wrapper">
+              <img src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=800&q=80" alt="AI Explained for Beginners" class="project-img" loading="lazy">
+              <div class="project-overlay"><span class="view-tag">Watch on YouTube <i data-lucide="play-circle"></i></span></div>
+            </div>
+            <div class="project-details">
+              <div class="project-meta"><span class="project-cat">Video Editing</span><span class="project-badge">Canva Created</span></div>
+              <h3 class="project-title">Tech Simplified: AI Explainer</h3>
+              <p class="project-desc">Educational YouTube explainer video created entirely in Canva with high visual retention.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. WORKING PROCESS -->
+    <section id="process" class="section process-section">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-tag">05 / Process</span>
+          <h2 class="section-title">Simple 4-Step <br><span class="gradient-text">Execution</span></h2>
+          <p class="section-subtitle">A transparent workflow to ship your project without delays.</p>
+        </div>
+
+        <div class="process-grid">
+          <div class="process-card glass-panel reveal-item">
+            <span class="step-num">01</span>
+            <div class="step-icon"><i data-lucide="search"></i></div>
+            <h3>Discovery</h3>
+            <p>We analyze your goals, scope, and technical roadmap.</p>
+          </div>
+
+          <div class="process-card glass-panel reveal-item">
+            <span class="step-num">02</span>
+            <div class="step-icon"><i data-lucide="palette"></i></div>
+            <h3>UI/UX Design</h3>
+            <p>Interactive Figma prototypes and clean component systems.</p>
+          </div>
+
+          <div class="process-card glass-panel reveal-item">
+            <span class="step-num">03</span>
+            <div class="step-icon"><i data-lucide="code-2"></i></div>
+            <h3>Development</h3>
+            <p>Clean, tested code for web, mobile, or enterprise software.</p>
+          </div>
+
+          <div class="process-card glass-panel reveal-item">
+            <span class="step-num">04</span>
+            <div class="step-icon"><i data-lucide="rocket"></i></div>
+            <h3>Publish & Launch</h3>
+            <p>Store review approvals, domain setup, and seamless deployment.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. HORIZONTAL AUTO-SLIDING TESTIMONIALS (Shows 4 at a time, smooth auto-slide) -->
+    <section id="testimonials" class="section testimonials-section">
+      <div class="container">
+        <div class="section-header flex-header">
+          <div>
+            <span class="section-tag">06 / Client Feedback</span>
+            <h2 class="section-title">Endorsements from <br><span class="gradient-text">Founders & Creators</span></h2>
+            <p class="section-subtitle">Read how Silent Spark Studio helped startups and global companies scale.</p>
+          </div>
+          <div class="carousel-controls">
+            <button class="carousel-btn prev" id="slider-prev" aria-label="Previous testimonials"><i data-lucide="chevron-left"></i></button>
+            <button class="carousel-btn next" id="slider-next" aria-label="Next testimonials"><i data-lucide="chevron-right"></i></button>
+          </div>
+        </div>
+
+        <div class="testimonials-carousel-wrapper" id="testimonials-wrapper">
+          <div class="testimonials-track" id="testimonials-track">
+            <!-- Review 1 -->
+            <div class="testimonial-slide">
+              <div class="testimonial-card glass-panel">
+                <div class="stars">★★★★★</div>
+                <p class="quote-text">&ldquo;Silent Spark Studio handled our entire mobile app from UI design to publishing on Google Play and Apple App Store. Not a single policy rejection!&rdquo;</p>
+                <div class="author-info">
+                  <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=120&h=120&q=80" alt="Zubair Rahman" class="author-img" loading="lazy">
+                  <div>
+                    <h4 class="author-name">Zubair Rahman</h4>
+                    <span class="author-role">Founder, PulseFit AI</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Review 2 -->
+            <div class="testimonial-slide">
+              <div class="testimonial-card glass-panel">
+                <div class="stars">★★★★★</div>
+                <p class="quote-text">&ldquo;The Canva YouTube explainer videos they created for our channel gained over 50,000 views in the first two weeks. Clean graphics and great pacing!&rdquo;</p>
+                <div class="author-info">
+                  <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&w=120&h=120&q=80" alt="Sarah Al-Mansoor" class="author-img" loading="lazy">
+                  <div>
+                    <h4 class="author-name">Sarah Al-Mansoor</h4>
+                    <span class="author-role">Creator, Tech Horizon</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Review 3 -->
+            <div class="testimonial-slide">
+              <div class="testimonial-card glass-panel">
+                <div class="stars">★★★★★</div>
+                <p class="quote-text">&ldquo;Fast, communicative, and technically solid. Their custom ERP software streamlined our entire inventory and warehouse dispatch pipeline.&rdquo;</p>
+                <div class="author-info">
+                  <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=120&h=120&q=80" alt="David Chen" class="author-img" loading="lazy">
+                  <div>
+                    <h4 class="author-name">David Chen</h4>
+                    <span class="author-role">COO, OmniLogix Solutions</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Review 4 -->
+            <div class="testimonial-slide">
+              <div class="testimonial-card glass-panel">
+                <div class="stars">★★★★★</div>
+                <p class="quote-text">&ldquo;Our new website achieved a 98 PageSpeed score. Our conversion rate increased by 38% right after Silent Spark's redesign went live.&rdquo;</p>
+                <div class="author-info">
+                  <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=120&h=120&q=80" alt="Elena Rostova" class="author-img" loading="lazy">
+                  <div>
+                    <h4 class="author-name">Elena Rostova</h4>
+                    <span class="author-role">Marketing VP, Apex Analytics</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Review 5 -->
+            <div class="testimonial-slide">
+              <div class="testimonial-card glass-panel">
+                <div class="stars">★★★★★</div>
+                <p class="quote-text">&ldquo;Publishing an app on iOS used to give us constant headaches. Silent Spark took over, handled certificates, privacy declarations, and got us live smoothly.&rdquo;</p>
+                <div class="author-info">
+                  <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=120&h=120&q=80" alt="Marcus Sterling" class="author-img" loading="lazy">
+                  <div>
+                    <h4 class="author-name">Marcus Sterling</h4>
+                    <span class="author-role">Product Lead, Zeno Wallet</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Review 6 -->
+            <div class="testimonial-slide">
+              <div class="testimonial-card glass-panel">
+                <div class="stars">★★★★★</div>
+                <p class="quote-text">&ldquo;Their Canva explainer video explained our complex blockchain protocol so simply that even non-technical investors understood our vision instantly.&rdquo;</p>
+                <div class="author-info">
+                  <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=120&h=120&q=80" alt="Amina Begum" class="author-img" loading="lazy">
+                  <div>
+                    <h4 class="author-name">Amina Begum</h4>
+                    <span class="author-role">Community Director, FinTrack</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Review 7 -->
+            <div class="testimonial-slide">
+              <div class="testimonial-card glass-panel">
+                <div class="stars">★★★★★</div>
+                <p class="quote-text">&ldquo;The UI/UX design prototype they built in Figma was so clean our development team implemented it ahead of schedule. Truly premium dark design.&rdquo;</p>
+                <div class="author-info">
+                  <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&w=120&h=120&q=80" alt="Julian Thorne" class="author-img" loading="lazy">
+                  <div>
+                    <h4 class="author-name">Julian Thorne</h4>
+                    <span class="author-role">Head of Design, Skylight</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Review 8 -->
+            <div class="testimonial-slide">
+              <div class="testimonial-card glass-panel">
+                <div class="stars">★★★★★</div>
+                <p class="quote-text">&ldquo;Honest, fast delivery, and top-tier code quality. Silent Spark is our go-to agency for all future web and mobile releases.&rdquo;</p>
+                <div class="author-info">
+                  <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=120&h=120&q=80" alt="Farhan Ahmed" class="author-img" loading="lazy">
+                  <div>
+                    <h4 class="author-name">Farhan Ahmed</h4>
+                    <span class="author-role">Co-Founder, EduQuest Labs</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slider Pagination Dots -->
+        <div class="carousel-dots" id="carousel-dots"></div>
+      </div>
+    </section>
+
+    <!-- 7. CONTACT / CTA -->
+    <section id="contact" class="section contact-section">
+      <div class="container">
+        <div class="contact-wrapper glass-panel reveal-item">
+          <div class="contact-grid">
+            <div class="contact-info">
+              <span class="section-tag">07 / Contact</span>
+              <h2 class="contact-title">Let&apos;s build your <br><span class="gradient-text">next project.</span></h2>
+              <p class="contact-desc">
+                Have an idea for a website, mobile app, software, store publishing, or YouTube explainer video? Reach out and we&apos;ll get back to you within 12 hours.
+              </p>
+
+              <div class="contact-direct">
+                <div class="direct-item">
+                  <div class="direct-icon"><i data-lucide="mail"></i></div>
+                  <div>
+                    <span class="direct-label">Support Email</span>
+                    <a href="mailto:dreamhost391@gmail.com" class="direct-link">dreamhost391@gmail.com</a>
+                  </div>
+                </div>
+                <div class="direct-item">
+                  <div class="direct-icon direct-icon-whatsapp"><i data-lucide="message-circle"></i></div>
+                  <div class="whatsapp-direct-content">
+                    <span class="direct-label">WhatsApp Direct</span>
+                    <div class="whatsapp-action-group">
+                      <a href="https://wa.me/8801947781282?text=Hello%20Silent%20Spark%20Studio,%20I%20have%20a%20project%20inquiry" target="_blank" rel="noopener noreferrer" class="direct-link whatsapp-link" id="whatsapp-direct-link">+880 1947-781282</a>
+                      <button type="button" class="btn-copy-wa" id="copy-whatsapp-btn" title="Copy WhatsApp Number" aria-label="Copy WhatsApp Number">
+                        <i data-lucide="copy" class="copy-icon"></i>
+                        <span class="copy-tooltip" id="copy-tooltip">Copy</span>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="direct-item">
+                  <div class="direct-icon"><i data-lucide="check-circle"></i></div>
+                  <div>
+                    <span class="direct-label">Services</span>
+                    <span class="direct-val">Web &bull; Apps &bull; UI/UX &bull; YouTube Video</span>
+                  </div>
+                </div>
+                <div class="direct-item">
+                  <div class="direct-icon"><i data-lucide="clock"></i></div>
+                  <div>
+                    <span class="direct-label">Response Time</span>
+                    <span class="direct-val">Within 12 Hours</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="contact-form-container">
+              <form id="contact-form" class="contact-form" action="https://formsubmit.co/dreamhost391@gmail.com" method="POST">
+                <!-- FormSubmit Configuration Settings -->
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_template" value="box">
+                <input type="hidden" name="_subject" value="New Client Inquiry - Silent Spark Studio">
+                <!-- Reply-To Configuration: Direct Reply to Client Email -->
+                <input type="hidden" name="_replyto" id="form-replyto" value="">
+                <!-- Spam Protection Honeypot -->
+                <input type="text" name="_honey" style="display:none">
+
+                <div class="form-group">
+                  <label for="name">Your Name</label>
+                  <input type="text" id="name" name="name" placeholder="E.g., Tanvir Hasan" required>
+                </div>
+
+                <div class="form-group">
+                  <label for="email">Email Address</label>
+                  <input type="email" id="email" name="email" placeholder="tanvir@company.com" required>
+                </div>
+
+                <div class="form-group">
+                  <label for="service">Select Service</label>
+                  <select id="service" name="service" required>
+                    <option value="Website Development">Website Development</option>
+                    <option value="Mobile App Development">Mobile App Development</option>
+                    <option value="Custom Software Development">Custom Software Development</option>
+                    <option value="UI / UX Design">UI / UX Design</option>
+                    <option value="Play Store & Apple Store Publishing">Play Store & Apple Store Publishing</option>
+                    <option value="YouTube Explainer Video (Canva)">YouTube Explainer Video (Canva)</option>
+                    <option value="All-in-One Full Package">Complete Full Package</option>
+                  </select>
+                </div>
+
+                <div class="form-group">
+                  <label for="message">Project Overview</label>
+                  <textarea id="message" name="message" rows="3" placeholder="Tell us about your project goals and timeline..." required></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-primary btn-submit">
+                  <span>Send Inquiry</span>
+                  <i data-lucide="send"></i>
+                </button>
+                <div id="form-feedback" class="form-feedback"></div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Interactive Service Details Modal (Deep Dive) -->
+  <div class="service-modal-overlay" id="service-modal" aria-hidden="true">
+    <div class="service-modal-dialog">
+      <button class="modal-close-btn" id="modal-close" aria-label="Close details">&times;</button>
+      
+      <div class="modal-badge-wrapper">
+        <span class="modal-category" id="modal-category">Service Category</span>
+      </div>
+      
+      <h2 class="modal-title" id="modal-title">Service Name</h2>
+      <p class="modal-tagline" id="modal-tagline">Brief summary of service value</p>
+
+      <div class="modal-content-grid">
+        <div class="modal-detail-block">
+          <h4><i data-lucide="sparkles"></i> Comprehensive Scope</h4>
+          <p id="modal-description">Detailed overview of how we deliver this service.</p>
+        </div>
+
+        <div class="modal-detail-block">
+          <h4><i data-lucide="layers"></i> Deliverables & Features</h4>
+          <ul class="modal-list" id="modal-features">
+            <!-- Dynamically populated -->
+          </ul>
+        </div>
+
+        <div class="modal-detail-block">
+          <h4><i data-lucide="cpu"></i> Technologies & Tools</h4>
+          <div class="modal-tech-tags" id="modal-tech">
+            <!-- Dynamically populated -->
+          </div>
+        </div>
+
+        <div class="modal-detail-block highlight-block">
+          <h4><i data-lucide="check-circle-2"></i> Our Studio Guarantee</h4>
+          <p id="modal-guarantee">Quality assurance and support guarantee.</p>
+        </div>
+      </div>
+
+      <div class="modal-action-bar">
+        <a href="#contact" class="btn btn-primary" id="modal-cta">
+          <span>Inquire About This Service</span>
+          <i data-lucide="arrow-right"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Interactive Legal Modal (Privacy Policy & Terms of Service) -->
+  <div class="service-modal-overlay" id="legal-modal" aria-hidden="true">
+    <div class="service-modal-dialog legal-modal-dialog">
+      <button class="modal-close-btn" id="legal-modal-close" aria-label="Close legal details">&times;</button>
+      
+      <div class="modal-badge-wrapper">
+        <span class="modal-category" id="legal-modal-category">Legal Document</span>
+      </div>
+      
+      <h2 class="modal-title" id="legal-modal-title">Legal Terms</h2>
+      <p class="modal-tagline" id="legal-modal-date">Last updated: November 2026</p>
+
+      <div class="legal-content-body" id="legal-modal-body">
+        <!-- Content injected dynamically via script.js -->
+      </div>
+
+      <div class="modal-action-bar">
+        <button class="btn btn-secondary" id="legal-modal-ok">
+          <span>I Understand</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-container">
+      <div class="footer-brand">
+        <a href="#hero" class="brand-logo">
+          <span class="spark-icon">✦</span>
+          <span class="logo-text">Silent <span class="text-accent">Spark</span> <span class="logo-studio">Studio</span></span>
+        </a>
+        <p class="footer-tagline">Web &bull; Mobile &bull; Software &bull; Store Publishing &bull; YouTube Explainer Videos</p>
+      </div>
+
+      <div class="footer-nav">
+        <a href="#hero">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#portfolio">Work</a>
+        <a href="#process">Process</a>
+        <a href="#testimonials">Reviews</a>
+        <a href="#contact">Contact</a>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; <span id="year"></span> Silent Spark Studio. All rights reserved.</p>
+        
+        <!-- Text-based clickable Legal Links -->
+        <div class="legal-links">
+          <a href="privacy-policy.html" target="_blank" rel="noopener">Privacy Policy</a>
+          <span class="separator">&bull;</span>
+          <a href="terms-conditions.html" target="_blank" rel="noopener">Terms &amp; Conditions</a>
+        </div>
+
+        <div class="social-links">
+          <a href="#" aria-label="Twitter"><i data-lucide="twitter"></i></a>
+          <a href="#" aria-label="GitHub"><i data-lucide="github"></i></a>
+          <a href="#" aria-label="LinkedIn"><i data-lucide="linkedin"></i></a>
+          <a href="#" aria-label="YouTube"><i data-lucide="youtube"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
